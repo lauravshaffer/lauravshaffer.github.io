@@ -110,13 +110,8 @@
 		$subject = 'Message from Portfolio Form';
 
 		$body = "From: $name\n E-Mail: $email\n Message:\n $message";
-
-    // If there are no errors, send the email
-	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
 	}
-}
-  ?>
+?>
 
     <form class="form-horizontal" role="form" method="post" action="index.php">
 <fieldset>
