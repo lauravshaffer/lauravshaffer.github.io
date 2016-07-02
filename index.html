@@ -98,33 +98,58 @@
   <div class="row">
 
   <!--FORM-->
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+  $from = 'Portfolio Contact Form'; 
+  $to = 'lauravshaffer@gmail.com';
+  $subject = 'Message from Portfolio Form';
 
-    <form class="form-horizontal">
+  $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+  <?php
+	if (isset($_POST["submit"])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+		$from = 'Portfolio Contact Form';
+		$to = 'lauravshaffer@gmail.com';
+		$subject = 'Message from Portfolio Form';
+
+		$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+    // If there are no errors, send the email
+	if (mail ($to, $subject, $body, $from)) {
+		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+	}
+}
+
+    <form class="form-horizontal" role="form" method="post" action="index.php">
 <fieldset>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="inputName">Name</label>
+  <label class="col-md-4 control-label" for="name">Name</label>
   <div class="col-md-4">
-  <input id="inputName" name="inputName" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="" value="<?php echo htmlspecialchars($_POST['name']); ?>">
 
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="inputEmail">E-mail</label>
+  <label class="col-md-4 control-label" for="email">E-mail</label>
   <div class="col-md-4">
-  <input id="inputEmail" name="inputEmail" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="" value="<?php echo htmlspecialchars($_POST['email']); ?>">
 
   </div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="inputMessage">Message</label>
+  <label class="col-md-4 control-label" for="message">Message</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="inputMessage" name="inputMessage" placeholder="Say Hello!"></textarea>
+    <textarea class="form-control" id="message" name="message" placeholder="Say Hello!" required="" value="<?php echo htmlspecialchars($_POST['message']); ?>"></textarea>
   </div>
 </div>
 
@@ -135,6 +160,11 @@
     <button id="Submit" name="Submit" class="btn btn-inverse">Send</button>
   </div>
 </div>
+<div class="form-group">
+		<div class="col-md-4">
+			<?php echo $result; ?>
+		</div>
+	</div>
 
 </fieldset>
 </form>
