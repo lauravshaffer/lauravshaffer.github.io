@@ -3,10 +3,11 @@ if(isset($_POST["send"])) {
 echo $name = $_POST ["yourName"];
 echo $email = $_POST["yourEmail"];
 echo  $message = $_POST["yourMessage"];
+$to = "lauravshaffer@gmail.com";
+$subject = "Message from Portfolio Contact Form";
+;
 
-$mailBody="Name: $name\nEmail: $email\n\n$message";
-
-mail ('lauravshaffer@gmail.com', 'Message from Portfolio Contact', $mailBody, "From: $name <$email>");
+mail($to,$subject,$name,$email,$message);
 }
 ?>
 <!DOCTYPE HTML>
@@ -19,7 +20,7 @@ mail ('lauravshaffer@gmail.com', 'Message from Portfolio Contact', $mailBody, "F
 <body>
 
 <h1>Thanks</h1>
-<p>We'll get back to you as soon as possible.</p>
+<p>I will get back to you as soon as possible.</p>
 <p><a href="https://lauravshaffer.github.io">Back to my Portfolio</a></p>
 
 </body>
