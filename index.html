@@ -1,43 +1,35 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Laura Shaffer Portfolio</title>
 
 
 
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--NAVIGATION-->
 
-        <link rel="stylesheet" href="css/style.css">
-
-
-
-
-  </head>
-
-  <body>
-
-    <html>
-  <!--NAVIGATION-->
-  <body>
-    <nav class="navbar navbar-default"></nav>
-  <nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default"></nav>
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img class="img-responsive image-icon" src="https://i.imgsafe.org/579885b5b3.jpeg"></img></a>
-    </div>
+  <div class="navbar-header">
+  <a class="navbar-brand" href="#"><img class="img-responsive image-icon" src="https://i.imgsafe.org/579885b5b3.jpeg"></img></a>
+  </div>
 <ul class="nav navbar-nav navbar-right">
       <li><a href="#top">about</a></li>
       <li><a href="#portfolio">portfolio</a></li>
       <li><a href="#contact">contact</a></li>
     </ul>
   </div>
-    </nav>
+</nav>
 <!--end of NAVIGATION-->
-
-  <div class="container-fluid">
   <!--ABOUT-->
+<div class="container-fluid">
   <a name="about">
     <div class="row"></a>
     <div class="col-md-2"></div>
@@ -54,12 +46,10 @@
     </div>
     </div>
   <!--end of ABOUT-->
+  <!--PORTFOLIO-->
   <a name="portfolio"></a>
   <div class="row">
     <h2 class="text-center">PORTFOLIO</h2></div>
-
-
-  <!--PORTFOLIO-->
     <div class="row">
       <div class="col-md-2">
     </div>
@@ -71,20 +61,19 @@
       <a href="http://bottleandbone.com/thanksgiving/tips-for-hosting-thanksgiving/" target="_blank"><img alt="THANKSGIVING" style="width:90%" class="img-responsive black-border center-block img-portfolio" src="https://i.imgsafe.org/6d2131e813.png">
         </a>
         </img>
-    <a href="http://www.noraconrad.com/blog/procrastinatewell?rq=productive" target="_blank"><img alt="PRODUCTIVITY" style="width:90%" class="img-responsive black-border center-block img-portfolio" src="https://i.imgsafe.org/6d3ae23d64.png">
+      <a href="http://www.noraconrad.com/blog/procrastinatewell?rq=productive" target="_blank"><img alt="PRODUCTIVITY" style="width:90%" class="img-responsive black-border center-block img-portfolio" src="https://i.imgsafe.org/6d3ae23d64.png">
         </a>
         </img>
-
-    </div>
+</div>
       <div class="col-xs-18 col-md-4">
         <h4>Graphic Design</h4>
-        <a href="https://society6.com/product/makes-you-think-cgh_print#s6-4650995p4a1v45" target="_blank"><img alt="THINK" style="width:90%" class="img-responsive black-border center-block img-portfolio" src="https://i.imgsafe.org/58e08d80a8.jpg">
+      <a href="https://society6.com/product/makes-you-think-cgh_print#s6-4650995p4a1v45" target="_blank"><img alt="THINK" style="width:90%" class="img-responsive black-border center-block img-portfolio" src="https://i.imgsafe.org/58e08d80a8.jpg">
         </a>
         </img>
-<a href="https://society6.com/product/love-love-love-38l_print#s6-4643588p4a1v45" target="_blank"><img alt="LOVE" style="width:90%" class="img-responsive black-border center-block img-portfolio" src="https://i.imgsafe.org/58fb4c1e03.jpg">
+      <a href="https://society6.com/product/love-love-love-38l_print#s6-4643588p4a1v45" target="_blank"><img alt="LOVE" style="width:90%" class="img-responsive black-border center-block img-portfolio" src="https://i.imgsafe.org/58fb4c1e03.jpg">
         </a>
         </img>
-<a href="https://society6.com/product/center-your-heart-92i_print#s6-4651044p4a1v45" target="_blank"><img alt="centeredheart" style="width:90%" class="img-responsive black-border center-block img-portfolio" src="https://i.imgsafe.org/58eaba065f.jpg">
+    <a href="https://society6.com/product/center-your-heart-92i_print#s6-4651044p4a1v45" target="_blank"><img alt="centeredheart" style="width:90%" class="img-responsive black-border center-block img-portfolio" src="https://i.imgsafe.org/58eaba065f.jpg">
         </a>
         </img>
      </div>
@@ -92,40 +81,39 @@
   </div>
     </div>
   <!--end of PORTFOLIO-->
+<!--FORM-->
 <a name="contact"></a>
   <div class="row">
-    <h2 class="text-center">CONTACT</h2></div>
-
-
-  <!--FORM-->
-
+    <h2 class="text-center">CONTACT</h2>
+  </div>
+<div class="container-fluid">
 <div class="row">
-    <form class="form-horizontal" action="submit.php" method="POST">
+    <form name="portfoliocontact" action="https://lauravshaffer.github.io/submit.php" method="POST" class="form-horizontal" role="form">
 <fieldset>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="name">Name</label>
+  <label class="col-md-4 control-label" for="inputName">Name</label>
   <div class="col-md-4">
-  <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
+  <input type="text" class="form-control input-md" id="inputName" name="inputName" required="required">
 
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="email">E-mail</label>
+  <label class="col-md-4 control-label" for="inputEmail">E-mail</label>
   <div class="col-md-4">
-  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+  <input type="text" class="form-control input-md" id="inputEmail" name="inputEmail" required="required">
 
   </div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="message">Message</label>
+  <label class="col-md-4 control-label" for="inputMessage">Message</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="message" name="message" placeholder="Say Hello!" required=""></textarea>
+    <textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Say Hello!" required=""></textarea>
   </div>
 </div>
 
@@ -133,12 +121,13 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Submit"></label>
   <div class="col-md-4">
-    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-inverse">
+    <button type="submit" class="btn btn-success btn-send" value="Send">
   </div>
 </div>
 
 </fieldset>
 </form>
+</div>
 </div>
 <!--END OF CONTACT-->
 <div class="row">
