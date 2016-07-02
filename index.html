@@ -99,25 +99,8 @@
 
   <!--FORM-->
 
-
-  <?php
-if(isset($_POST["submit"])) {
-$recipient = "lauravshaffer@gmail.com"; //my email
-echo $subject = 'Email message from Portfolio Contact';
-echo $name = $_POST ["yourName"];
-echo $email = $_POST["yourEmail"];
-echo  $message = $_POST["yourMessage"];
-
- $mailBody="Name: $name\nEmail: $email\n\n$message";
-
- mail($recipient, $subject, $mailBody, "From: $name <$email>");
-
-echo $thankYou="<p>Thank you! I will be in contact with you shortly.</p>";
-
-}
-?>
 <div class="row">
-    <form class="form-horizontal" role="form" method="GET" action="">
+    <form class="form-horizontal" role="form" method="POST" action="submit.php">
 <fieldset>
 
 <!-- Text input-->
@@ -151,7 +134,6 @@ echo $thankYou="<p>Thank you! I will be in contact with you shortly.</p>";
   <label class="col-md-4 control-label" for="Submit"></label>
   <div class="col-md-4">
     <button id="Submit" name="Submit" class="btn btn-inverse">Send</button>
-    	<?php echo $ThankYou; ?>
   </div>
 </div>
 
