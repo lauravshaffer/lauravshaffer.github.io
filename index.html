@@ -101,7 +101,7 @@
   $name = $_POST['name'];
   $email = $_POST['email'];
   $message = $_POST['message'];
-  $from = 'Portfolio Contact Form'; 
+  $from = 'Portfolio Contact Form';
   $to = 'lauravshaffer@gmail.com';
   $subject = 'Message from Portfolio Form';
 
@@ -140,7 +140,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="email">E-mail</label>
   <div class="col-md-4">
-  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
 
   </div>
 </div>
@@ -149,7 +149,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="message">Message</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="message" name="message" placeholder="Say Hello!" required="" value="<?php echo htmlspecialchars($_POST['message']); ?>"></textarea>
+    <textarea class="form-control" id="message" name="message" placeholder="Say Hello!" required=""></textarea>
   </div>
 </div>
 
