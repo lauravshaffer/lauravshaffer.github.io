@@ -44,6 +44,14 @@ h5 {
   margin-top: 50px;
   text-align: right;
 }
+hr {
+      width: 60%;
+}
+h6 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align:center;
+  }
 .black-border {
   border-color: black;
   border-width: 10px;
@@ -85,5 +93,8 @@ h5 {
 }
   nav:hover ul {
     display: block;
+}
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
 }
 </style>
