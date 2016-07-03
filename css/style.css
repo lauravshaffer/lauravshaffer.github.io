@@ -65,5 +65,20 @@ h6 {
 	text-decoration: none;
   padding-bottom: 50px;
 }
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+	header {
+    position: absolute;
+}
+
+	.image-icon {
+    display:inline-block;
+}
+
+	nav ul, nav:active ul {
+    display: none;
+}
+
 
 </style>
