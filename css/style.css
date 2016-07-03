@@ -76,14 +76,12 @@ h6 {
 }
   nav ul, nav:active ul {
     display: none;
-		position: absolute;
+		position: static;
 		padding: 20px;
 		background: #fff;
 		border: 5px solid #444;
-		right: 20px;
-		top: 60px;
 		width: 50%;
-		border-radius: 4px 0 4px 4px;
+		border-radius: 0px 0 4px 4px;
 }
   nav li {
     text-align: center;
@@ -93,8 +91,5 @@ h6 {
 }
   nav:hover ul {
     display: block;
-}
-ul li a:hover + .hidden, .hidden:hover {
-	display: block;
 }
 </style>
