@@ -50,7 +50,7 @@ hr {
 h6 {
   margin-top: 50px;
   margin-bottom: 50px;
-  text-align:center;
+  text-align: center;
   }
 .black-border {
   border-color: black;
@@ -79,6 +79,10 @@ h6 {
 	nav ul, nav:active ul {
     display: none;
 }
+.image-selfie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 
 
 </style>
