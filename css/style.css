@@ -80,9 +80,8 @@ h6 {
     display: none;
 }
 .image-selfie {
-    display:  center-block;
-    margin-left: auto;
-    margin-right: auto }
+  text-align: center;
+}
 
 
 </style>
