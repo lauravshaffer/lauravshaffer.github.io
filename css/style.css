@@ -80,7 +80,7 @@ h6 {
     display: none;
 }
 .image-selfie {
-    display: block;
+    display:  center-block;
     margin-left: auto;
     margin-right: auto }
 
